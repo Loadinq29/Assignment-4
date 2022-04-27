@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="CWEB Assignment">
+    <meta name="keywords" content="Based Off Sitemap with 3-5 Pages.">
+    <meta name="author" content="Ryan Young">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+</head>
+<style>
+html{background-color:#696969;
+
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+a{
+	display:inline;
+	text-align: center;
+	color: whitesmoke;
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4169E1;
+  color: black;
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(13, 1fr);
+grid-template-rows: repeat(13, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #808080;
+height: 600px;
+}
+
+
+.div1 { grid-area: 2 / 2 / 7 / 6; 
+        background-color: red;
+}
+.div2 { grid-area: 8 / 2 / 13 / 6; 
+        background-color: red;
+}
+.div3 { grid-area: 2 / 9 / 7 / 13; 
+        background-color: red;
+}
+.div4 { grid-area: 8 / 9 / 13 / 13; 
+        background-color: red;
+}
+
+</style>
+
+<body>
+
+<nav>
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+</nav>
+
+  <div class="parent">
+<div class="div1">IMG </div>
+<div class="div2"> IMG</div>
+<div class="div3"> IMG</div>
+<div class="div4">IMG </div>
+
+
+
+
+
+</body>
+</html>

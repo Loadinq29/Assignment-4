@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="CWEB Assignment">
+    <meta name="keywords" content="Based Off Sitemap with 3-5 Pages.">
+    <meta name="author" content="Ryan Young">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+</head>
+<style>
+html{background-color:#696969;
+
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+a{
+	display:inline;
+	text-align: center;
+	color: whitesmoke;
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4169E1;
+  color: black;
+}
+
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(9, 1fr);
+grid-template-rows: repeat(9, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #808080;
+height: 600px;
+}
+
+
+.div1 { grid-area: 3 / 3 / 4 / 4; 
+        background-color: rgba(128, 0, 0, 0.8);
+}
+
+.div2 { grid-area: 3 / 7 / 4 / 8; 
+        background-color: rgba(128, 0, 0, 0.8);
+
+}
+
+.div3 { grid-area: 5 / 2 / 9 / 5; 
+        background-color: rgba(128, 0, 0, 0.8);
+}
+
+.div4 { grid-area: 5 / 6 / 9 / 9; 
+        background-color: rgba(128, 0, 0, 0.8);
+}
+
+
+</style>
+
+<body>
+
+<nav>
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+</nav>
+
+<div class="parent">
+<div class="div1">Price </div>
+<div class="div2">Price</div>
+<div class="div3"> Image</div>
+<div class="div4"> Image</div>
+</div>
+
+
+
+</body>
+</html>
